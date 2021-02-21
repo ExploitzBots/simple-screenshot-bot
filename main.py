@@ -33,8 +33,9 @@ async def start_browser():
 
 @bot.on(events.NewMessage(pattern='/start'))
 async def start(event):
-    await event.respond('Hi! I am alive. \
-        Send me any link, I will send you the screenshot of that page.')
+    await event.respond('''Hi! I am alive. \
+        Send me any link, I will send you the screenshot of that page.
+Bot Made With ❤️ By @ExploitzBot''')
     raise events.StopPropagation
 
 
